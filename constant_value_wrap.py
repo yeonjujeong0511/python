@@ -1,0 +1,2 @@
+A_VALUE = 1
+B_VALUE = 2
