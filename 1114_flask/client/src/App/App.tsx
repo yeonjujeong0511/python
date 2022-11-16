@@ -1,11 +1,11 @@
-import Main from "../Components/Main";
+import DbPrac from "../Components/DbPrac";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Main />
+      <DbPrac />
     </>
   );
 }

@@ -15,7 +15,7 @@ type companyResponse = {
   data: company[];
 };
 
-const Main = () => {
+const DbPrac = () => {
   const [companyData, setCompanyData] = useState([]);
 
   useEffect((): any => {
@@ -56,4 +56,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default DbPrac;

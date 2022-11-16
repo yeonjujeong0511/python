@@ -25,7 +25,7 @@ def db_connection():
 def company():
     db = db_connection()
     cur = db.cursor()
-    sql = 'SELECT * FROM `aitrading_db`.`companylist` LIMIT 100;'
+    sql = 'SELECT * FROM `aitrading_db`.`companylist` LIMIT 10;'
     # SQL query 실행
     cur.execute(sql)
     # SQL query 실행 결과를 가져온다.
