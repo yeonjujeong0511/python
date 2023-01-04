@@ -1,17 +1,26 @@
 class Pokemon:
-    def __init__(self,id,name):
+    def __init__(self, id, name):
         self.id = id
         self.name = name
 
 # python에서도 생성자 함수를 지원한다.
 
-getFromJson = ['피카츄','라이츄','파이리','꼬부기','버터풀','야도란','피존투','또가스','야도킹','고오스']
+
+getFromJson = ['피카츄', '라이츄', '파이리', '꼬부기',
+               '버터풀', '야도란', '피존투', '또가스', '야도킹', '고오스']
 
 pokemon_list = []
 
 for i in range(getFromJson.__len__()):
-    pokemon_list.append(Pokemon(i+1,getFromJson[i]))
+    pokemon_list.append(Pokemon(i+1, getFromJson[i]))
 
 
 for obj in range(pokemon_list.__len__()):
     print(pokemon_list[obj].__dict__)
+
+
+# 빅데이터, 머신러닝 등등 파이썬에 특화되어 있다는 기능이나 모듈을 사용하는 것에 있어, 어김없이 생성자 함수(constructor function)가 하나의 데이터 처리 방식으로, 하나의 규격으로 기타등등 상당히 많은 부분에서 활용되고 있는 구조중에 하나 입니다. 예제를 만들면서 자바스크립트와의 비교군을 통해 기억에 더욱 남을 수 있도록 정보를 찾는 과정에서 깨닳은 바는 차이점보다 공통점이 훨씬 더욱 많은 것을 다시한번 체감합니다.
+
+# 파이썬의 장점은 에러코드가 자바스크립트에 비해 상당히 친절한 편이기 때문에, 어떤 명령을 작성하는 과정에서 근접한 데이터라면 "이런것 필요해?" 라는 식의 에러 로그를 남겨주기 때문에 개발 관련 주변지식이 풍부한 경우 상당한 속도를 낼 수 있습니다.
+
+# 예제에서도 자바스크립트를 기준으로 파이썬을 바라보고 있듯, 자바스크립트 작성법을 가지고, 파이썬을 둘러보시면 '탈 언어'화 된 개발자로서 한 발짝 다가서게 될 것입니다.
